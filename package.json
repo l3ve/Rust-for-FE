@@ -1,0 +1,15 @@
+{
+  "name": "rust-addon",
+  "version": "1.0.0",
+  "description": "rust addon",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "rust",
+    "addon"
+  ],
+  "author": "L3've",
+  "license": "ISC"
+}
