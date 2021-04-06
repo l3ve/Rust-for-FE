@@ -2,14 +2,19 @@
   "name": "rust-addon",
   "version": "1.0.0",
   "description": "rust addon",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "go": "electron .",
+    "build": "cargo build --release && mv ./target/release/librust_addon.dylib ./index.node",
+    "try": "npm run build && node main"
   },
   "keywords": [
     "rust",
     "addon"
   ],
   "author": "L3've",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^12.0.2"
+  }
 }
