@@ -6,6 +6,7 @@
   "scripts": {
     "go": "electron .",
     "serve": "webpack serve --open",
+    "build-wasm":"wasm-pack build release",
     "rust-node-addon": "cargo build --release && mv ./target/release/librust_addon.dylib ./index.node && node main"
   },
   "keywords": [
